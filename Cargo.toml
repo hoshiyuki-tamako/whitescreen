@@ -1,21 +1,21 @@
 [package]
 name = "whitescreen"
 description = "Create a white screen"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 license = "MIT"
 homepage = "https://github.com/hoshiyuki-tamako/whitescreen"
 repository = "https://github.com/hoshiyuki-tamako/whitescreen"
 keywords = ["whitescreen", "white", "screen"]
 categories = ["command-line-utilities"]
+readme = "readme.md"
 
 [dependencies]
 bevy = "0.14.2"
 
 [profile.release]
 strip = true
-lto = true
-codegen-units = 1
+lto = false
 
 [lints.rust]
 unsafe_code = "forbid"
