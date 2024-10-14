@@ -7,7 +7,7 @@ use iced::{
 };
 
 pub fn main() -> iced::Result {
-    iced::application("A cool counter", App::update, App::view)
+    iced::application("White Screen", App::update, App::view)
         .theme(App::theme)
         .subscription(App::subscription)
         .run_with(App::new)
